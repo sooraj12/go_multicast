@@ -11,6 +11,8 @@ const (
 func main() {
 	sendMessage("multicast message")
 
+	go server()
+
 	var input string
 	fmt.Scan(&input)
 }
